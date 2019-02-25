@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Лабораторная №1</title>
-    
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
@@ -32,134 +32,88 @@
   <h3>Лабораторная работа №1</h3>
   <p>
  
+	<h3>1. Идентификатор прецедента</h3>
+<p>Навигатор</p>
+<h3>2. Название прецедента</h3>
+<p>Разработка мобильного приложения</p>
+<h3>3. Контекст</h3>
+<p>Учебное заведение</p>
+<h3>4. Участники (actors) и цели (goals)</h3>
+<table border="1" cellpadding="1" cellspacing="1" style="width: 300px">
+	<tbody>
+		<tr>
+			<td>Учасник</td>
+			<td>Категория</td>
+			<td style="text-align: center;">Цель(goal)</td>
+		</tr>
+		<tr>
+			<td>Студент</td>
+			<td>Основной</td>
+			<td>Нахождение пути в учебном заведении</td>
+		</tr>
+		<tr>
+			<td>Разработчик</td>
+			<td>Внешний</td>
+			<td>Создание приложения</td>
+		</tr>
+		<tr>
+			<td>База данных</td>
+			<td>Внешний</td>
+			<td>Место хранения информации</td>
+		</tr>
+	</tbody>
+</table>
+<h3>5. Предусловия (pre-conditions)</h3>
+<ul>
+	<li>Заполнение личного кабинета</li>
+	<li>Создание запроса на поиск маршрута</li>
+</ul>
+<h3>6. Постусловия (post-conditions)</h3>
+<ul>
+	<li>Сформулирован путь до необходимой аудитории</li>
+</ul>
+<h3>7. Основной поток (main flow)</h3>
+<table border="1" cellpadding="1" cellspacing="1" style="width: 600px">
+	<tbody>
+		<tr>
+			<td>Участник</td>
+			<td>Действие (activity)</td>
+			<td>Ожидаемый результат</td>
+		</tr>
+		<tr>
+			<td>Студент</td>
+			<td>Создаёт запрос</td>
+			<td>Запрос в приложении</td>
+		</tr>
+		<tr>
+			<td>Приложение</td>
+			<td>Обращение к БД расписания</td>
+			<td>Определена&nbsp;необходимая аудитория</td>
+		</tr>
+		<tr>
+			<td>Приложение</td>
+			<td>Обращение к БД маршрутов</td>
+			<td>Определён необходимый маршрут</td>
+		</tr>
+		<tr>
+			<td>Приложение</td>
+			<td>Отображение найденного маршрута</td>
+			<td>Выведен результат запроса</td>
+		</tr>
+	</tbody>
+</table>
+<h3>8. Исключения (exceptions)</h3>
+<ul>
+	<li>Не верное определение маршрута</li>
+	<li>Не верный ввод данных</li>
+</ul>
+<h3>9. Альтернативы (alternates)</h3>
+<ul>
+	<li>Возможность отправки сообщения о ощибке в маршруте</li>
+	<li>Оповещение о не корректности введённых данных</li>
+</ul>
+
 	  
-	  <h3 style="box-sizing: border-box; margin-bottom: 16px; font-size: 1.25em; line-height: 1.25; color: #24292e; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; background-color: #ffffff; margin-top: 0px !important;">1. Идентификатор прецедента</h3>
-<blockquote style="box-sizing: border-box; margin: 0px 0px 16px; border-left: 0.25em solid #dfe2e5; color: #6a737d; padding: 0px 1em; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 16px; background-color: #ffffff;">
-	<p style="box-sizing: border-box; margin-bottom: 0px; margin-top: 0px;">Как можно идентифицировать прецедент в его контексте?</p>
-</blockquote>
-<p style="box-sizing: border-box; margin-bottom: 16px; margin-top: 0px; color: #24292e; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 16px; background-color: #ffffff;">Навигатор</p>
-
-	  <h3 style="box-sizing: border-box; margin-bottom: 16px; margin-top: 24px; font-size: 1.25em; line-height: 1.25; color: #24292e; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; background-color: #ffffff;">2. Название прецедента</h3>
-<h3 style="box-sizing: border-box; margin-bottom: 16px; font-size: 1.25em; line-height: 1.25; color: #24292e; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; background-color: #ffffff; margin-top: 0px !important;">&nbsp;</h3>
-<blockquote style="box-sizing: border-box; margin: 0px 0px 16px; border-left: 0.25em solid #dfe2e5; color: #6a737d; padding: 0px 1em; font-size: 16px;">
-	<p style="box-sizing: border-box; margin-bottom: 0px; margin-top: 0px;">Как называется процесс деятельности (activity)?</p>
-</blockquote>
-<p style="box-sizing: border-box; margin-bottom: 16px; margin-top: 0px; font-size: 16px;">Разработка мобильного приложения</p>
-
-	  <h3 style="box-sizing: border-box; margin-bottom: 16px; margin-top: 24px; font-size: 1.25em; line-height: 1.25; color: #24292e; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; background-color: #ffffff;">3. Контекст</h3>
-<blockquote style="box-sizing: border-box; margin: 0px 0px 16px; border-left: 0.25em solid #dfe2e5; color: #6a737d; padding: 0px 1em; font-size: 16px;">
-	<p style="box-sizing: border-box; margin-bottom: 0px; margin-top: 0px;">Что является внешней средой для описываемой деятельности?</p>
-</blockquote>
-<p style="box-sizing: border-box; margin-bottom: 16px; margin-top: 0px; font-size: 16px;">Учебное заведение</p>
-
-	<h3 style="box-sizing: border-box; margin-bottom: 16px; margin-top: 24px; font-size: 1.25em; line-height: 1.25; color: #24292e; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; background-color: #ffffff;">4. Участники (actors) и цели (goals)</h3>
-<blockquote style="box-sizing: border-box; margin: 0px 0px 16px; border-left: 0.25em solid #dfe2e5; color: #6a737d; padding: 0px 1em; font-size: 16px;">
-	<p style="box-sizing: border-box; margin-bottom: 0px; margin-top: 0px;">Кто или что взаимодействует с системой для достижения определенных целей?</p>
-</blockquote>
-<table style="box-sizing: border-box; border-collapse: collapse; border-spacing: 0px; margin-bottom: 16px; margin-top: 0px; display: block; overflow: auto; width: 710px; font-size: 16px;">
-	<thead style="box-sizing: border-box;">
-		<tr style="box-sizing: border-box; border-top: 1px solid #c6cbd1;">
-			<th style="box-sizing: border-box; padding: 6px 13px; border-style: solid; border-color: #dfe2e5;">Участник</th>
-			<th style="box-sizing: border-box; padding: 6px 13px; border-style: solid; border-color: #dfe2e5;">Категория</th>
-			<th style="box-sizing: border-box; padding: 6px 13px; border-style: solid; border-color: #dfe2e5;">Цель (goal)</th>
-		</tr>
-	</thead>
-	<tbody style="box-sizing: border-box;">
-		<tr style="box-sizing: border-box; border-top: 1px solid #c6cbd1;">
-			<td style="box-sizing: border-box; padding: 6px 13px; border-style: solid; border-color: #dfe2e5;">Студент</td>
-			<td style="box-sizing: border-box; padding: 6px 13px; border-style: solid; border-color: #dfe2e5;">Основной</td>
-			<td style="box-sizing: border-box; padding: 6px 13px; border-style: solid; border-color: #dfe2e5;">Нахождение пути в учебном заведении</td>
-		</tr>
-		<tr style="box-sizing: border-box; background-color: #f6f8fa; border-top: 1px solid #c6cbd1;">
-			<td style="box-sizing: border-box; padding: 6px 13px; border-style: solid; border-color: #dfe2e5;">Разработчик</td>
-			<td style="box-sizing: border-box; padding: 6px 13px; border-style: solid; border-color: #dfe2e5;">Внешний</td>
-			<td style="box-sizing: border-box; padding: 6px 13px; border-style: solid; border-color: #dfe2e5;">Создание приложения</td>
-		</tr>
-		<tr style="box-sizing: border-box; border-top: 1px solid #c6cbd1;">
-			<td style="box-sizing: border-box; padding: 6px 13px; border-style: solid; border-color: #dfe2e5;">База данных</td>
-			<td style="box-sizing: border-box; padding: 6px 13px; border-style: solid; border-color: #dfe2e5;">Внешний</td>
-			<td style="box-sizing: border-box; padding: 6px 13px; border-style: solid; border-color: #dfe2e5;">Место хранения информации</td>
-		</tr>
-	</tbody>
-</table>
-<p>&nbsp;</p>
-	
-	<h3 style="box-sizing: border-box; margin-bottom: 16px; margin-top: 24px; font-size: 1.25em; line-height: 1.25; color: #24292e; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; background-color: #ffffff;">5. Предусловия (pre-conditions)</h3>
-<blockquote style="box-sizing: border-box; margin: 0px 0px 16px; border-left: 0.25em solid #dfe2e5; color: #6a737d; padding: 0px 1em; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 16px; background-color: #ffffff;">
-	<p style="box-sizing: border-box; margin-bottom: 0px; margin-top: 0px;">что должно произойти, прежде чем Use Case может стартовать?</p>
-</blockquote>
-<ul style="box-sizing: border-box; margin-bottom: 16px; margin-top: 0px; padding-left: 2em; color: #24292e; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 16px; background-color: #ffffff;">
-	<li style="box-sizing: border-box;">
-		<p style="box-sizing: border-box; margin-bottom: 16px; margin-top: 16px;">заполнение личного кабинета</p>
-	</li>
-	<li style="box-sizing: border-box; margin-top: 0.25em;">
-		<p style="box-sizing: border-box; margin-bottom: 16px; margin-top: 16px;">создание запроса на поиск маршрута</p>
-	</li>
-</ul>
-
-	<h3 style="box-sizing: border-box; margin-bottom: 16px; margin-top: 24px; font-size: 1.25em; line-height: 1.25; color: #24292e; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; background-color: #ffffff;">6. Постусловия (post-conditions)</h3>
-<blockquote style="box-sizing: border-box; margin: 0px 0px 16px; border-left: 0.25em solid #dfe2e5; color: #6a737d; padding: 0px 1em; font-size: 16px;">
-	<p style="box-sizing: border-box; margin-bottom: 0px; margin-top: 0px;">Что является успешным результатом?</p>
-</blockquote>
-<ul style="box-sizing: border-box; margin-bottom: 16px; margin-top: 0px; padding-left: 2em; font-size: 16px;">
-	<li style="box-sizing: border-box;">сформирован путь до необходимой аудитории</li>
-</ul>
-
-	<h3 style="box-sizing: border-box; margin-bottom: 16px; margin-top: 24px; font-size: 1.25em; line-height: 1.25; color: #24292e; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; background-color: #ffffff;">7. Основной поток (main flow)</h3>
-<blockquote style="box-sizing: border-box; margin: 0px 0px 16px; border-left: 0.25em solid #dfe2e5; color: #6a737d; padding: 0px 1em; font-size: 16px;">
-	<p style="box-sizing: border-box; margin-bottom: 0px; margin-top: 0px;">Что нужно сделать для перехода от предусловий к постусловиям?</p>
-</blockquote>
-<table style="box-sizing: border-box; border-collapse: collapse; border-spacing: 0px; margin-bottom: 16px; margin-top: 0px; display: block; overflow: auto; width: 710px; font-size: 16px;">
-	<thead style="box-sizing: border-box;">
-		<tr style="box-sizing: border-box; border-top: 1px solid #c6cbd1;">
-			<th style="box-sizing: border-box; padding: 6px 13px; border-style: solid; border-color: #dfe2e5;">Участник</th>
-			<th style="box-sizing: border-box; padding: 6px 13px; border-style: solid; border-color: #dfe2e5;">Действие (activity)</th>
-			<th style="box-sizing: border-box; padding: 6px 13px; border-style: solid; border-color: #dfe2e5;">Ожидаемый результат</th>
-		</tr>
-	</thead>
-	<tbody style="box-sizing: border-box;">
-		<tr style="box-sizing: border-box; border-top: 1px solid #c6cbd1;">
-			<td style="box-sizing: border-box; padding: 6px 13px; border-style: solid; border-color: #dfe2e5;">Студент</td>
-			<td style="box-sizing: border-box; padding: 6px 13px; border-style: solid; border-color: #dfe2e5;">Создаёт запрос</td>
-			<td style="box-sizing: border-box; padding: 6px 13px; border-style: solid; border-color: #dfe2e5;">Запрос в приложении</td>
-		</tr>
-		<tr style="box-sizing: border-box; background-color: #f6f8fa; border-top: 1px solid #c6cbd1;">
-			<td style="box-sizing: border-box; padding: 6px 13px; border-style: solid; border-color: #dfe2e5;">Приложение</td>
-			<td style="box-sizing: border-box; padding: 6px 13px; border-style: solid; border-color: #dfe2e5;">Обращение к БД расписания</td>
-			<td style="box-sizing: border-box; padding: 6px 13px; border-style: solid; border-color: #dfe2e5;">Определена необходимая аудитория</td>
-		</tr>
-		<tr style="box-sizing: border-box; border-top: 1px solid #c6cbd1;">
-			<td style="box-sizing: border-box; padding: 6px 13px; border-style: solid; border-color: #dfe2e5;">Приложение</td>
-			<td style="box-sizing: border-box; padding: 6px 13px; border-style: solid; border-color: #dfe2e5;">Обращение к БД маршрутов</td>
-			<td style="box-sizing: border-box; padding: 6px 13px; border-style: solid; border-color: #dfe2e5;">Определён необходимый маршрут</td>
-		</tr>
-		<tr style="box-sizing: border-box; background-color: #f6f8fa; border-top: 1px solid #c6cbd1;">
-			<td style="box-sizing: border-box; padding: 6px 13px; border-style: solid; border-color: #dfe2e5;">Приложение</td>
-			<td style="box-sizing: border-box; padding: 6px 13px; border-style: solid; border-color: #dfe2e5;">Отображение найденного маршрута</td>
-			<td style="box-sizing: border-box; padding: 6px 13px; border-style: solid; border-color: #dfe2e5;">Выведен результат запроса</td>
-		</tr>
-	</tbody>
-</table>
-<p>&nbsp;</p>
-	
-	<h3 style="box-sizing: border-box; margin-bottom: 16px; margin-top: 24px; font-size: 1.25em; line-height: 1.25; color: #24292e; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; background-color: #ffffff;">8. Исключения (exceptions)</h3>
-<blockquote style="box-sizing: border-box; margin: 0px 0px 16px; border-left: 0.25em solid #dfe2e5; color: #6a737d; padding: 0px 1em; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 16px; background-color: #ffffff;">
-	<p style="box-sizing: border-box; margin-bottom: 0px; margin-top: 0px;">Что может пойти не так?</p>
-</blockquote>
-<ul style="box-sizing: border-box; margin-bottom: 16px; margin-top: 0px; padding-left: 2em; color: #24292e; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 16px; background-color: #ffffff;">
-	<li style="box-sizing: border-box;">Неверное определение маршрута</li>
-	<li style="box-sizing: border-box; margin-top: 0.25em;">Неверный ввод данных</li>
-</ul>
-
-	<h3 style="box-sizing: border-box; margin-bottom: 16px; margin-top: 24px; font-size: 1.25em; line-height: 1.25; color: #24292e; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; background-color: #ffffff;">9. Альтернативы (alternates)</h3>
-<blockquote style="box-sizing: border-box; margin: 0px 0px 16px; border-left: 0.25em solid #dfe2e5; color: #6a737d; padding: 0px 1em; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 16px; background-color: #ffffff;">
-	<p style="box-sizing: border-box; margin-bottom: 0px; margin-top: 0px;">Что может повлиять на путь перехода от предусловий к постусловиям?</p>
-</blockquote>
-<ul style="box-sizing: border-box; margin-top: 0px; padding-left: 2em; color: #24292e; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 16px; background-color: #ffffff; margin-bottom: 0px !important;">
-	<li style="box-sizing: border-box;">Возможность отправки сообщения о ошибке в маршруте</li>
-	<li style="box-sizing: border-box; margin-top: 0.25em;">Оповещение о не корректности введённых данных</li>
-</ul>
-
 	</blockquote>
 Use Case диаграмма процессов создания системы:
   <p><img src="KolovMaksim.github.io/LR1/Create.PNG" alt="" /></p>
