@@ -1,1 +1,1 @@
-# KolovMaksim.github.io
+# KolovMaksi.github.io
